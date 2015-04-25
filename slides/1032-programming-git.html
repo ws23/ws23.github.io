@@ -442,6 +442,14 @@ pre .chunk {
 </section>
   </div>
   <div class="slide hidden" id="slide-8">
+    <section class="slide-content"><h3 id="create-new-branch">create new branch</h3>
+<ul>
+<li>新增一個屬於你自己用的branch</li>
+<li>轉移到該branch</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-9">
     <section class="slide-content"><h3 id="edit-file">edit file</h3>
 <ul>
 <li>編輯 practice.txt</li>
@@ -450,7 +458,7 @@ pre .chunk {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-9">
+  <div class="slide hidden" id="slide-10">
     <section class="slide-content"><h3 id="add-to-staging-area">add to staging area</h3>
 <ul>
 <li>把編輯好的檔案加入staging area</li>
@@ -458,7 +466,7 @@ pre .chunk {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-10">
+  <div class="slide hidden" id="slide-11">
     <section class="slide-content"><h3 id="commit-to-repository">commit to repository</h3>
 <ul>
 <li>把staging area中的檔案提交至版本控制庫</li>
@@ -466,16 +474,24 @@ pre .chunk {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-11">
+  <div class="slide hidden" id="slide-12">
     <section class="slide-content"><h3 id="push-to-remote">push to remote</h3>
 <ul>
 <li>把版本控制庫的檔案丟到遠端</li>
 <li>git push</li>
-<li>git push -u origin master // 第一次push</li>
+<li>git push -u origin <branch name></li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-12">
+  <div class="slide hidden" id="slide-13">
+    <section class="slide-content"><h3 id="merge-branch">merge branch</h3>
+<ul>
+<li>git checkout master 回到主branch</li>
+<li>git merge <branch name> 合併你前面有做修改的branch</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-14">
     <section class="slide-content"><h3 id="pull-to-local">pull to local</h3>
 <ul>
 <li>把遠端版本控制庫的資料拉到本地端</li>
@@ -484,12 +500,12 @@ pre .chunk {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-13">
+  <div class="slide hidden" id="slide-15">
     <section class="slide-content"><h1 id="-">完成作業練習</h1>
 </section>
   </div>
-  <div class="slide hidden" id="slide-14">
-    <section class="slide-content"><h3 id="-">總結常用步驟</h3>
+  <div class="slide hidden" id="slide-16">
+    <section class="slide-content"><h3 id="-branch-">總結常用步驟(不用branch)</h3>
 <ol>
 <li>git pull</li>
 <li>編輯</li>
@@ -502,11 +518,22 @@ pre .chunk {
 </ol>
 </section>
   </div>
-  <div class="slide hidden" id="slide-15">
+  <div class="slide hidden" id="slide-17">
+    <section class="slide-content"><h3 id="-branch-">總結常用步驟(branch)</h3>
+<ol>
+<li>git branch XDD // 建另一個叫做XDD的branch</li>
+<li>git checkout XDD // 轉移到XDD的branch</li>
+<li>各種修改測試可以多add多commit直到完整可以合併</li>
+<li>git checkout master // 轉移回到主branch</li>
+<li>git merge XDD // 如果沒有衝突要解決就會直接完成</li>
+</ol>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-18">
     <section class="slide-content"><p><img src="img/1032-programming-git-1.png" alt="state graph" title="state graph"></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-16">
+  <div class="slide hidden" id="slide-19">
     <section class="slide-content"><h3 id="-">其他常用動作</h3>
 <ul>
 <li>git status </li>
@@ -517,7 +544,7 @@ pre .chunk {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-17">
+  <div class="slide hidden" id="slide-20">
     <section class="slide-content"><h2 id="-">投影片作得很隨便</h2>
 <h1 id="-p">謝謝指教 :p</h1>
 </section>
